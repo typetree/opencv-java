@@ -40,7 +40,7 @@ public class Demo01FirstOpenCVApp {
         showImage(image_circle);
 
         putText(image_circle, "This is a dog", new Point(40,200), FONT_HERSHEY_PLAIN, 2.0, Scalar.WHITE, 2, 8, false);
-        showImage(image_circle77);
+        showImage(image_circle);
     }
 
 
