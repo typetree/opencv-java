@@ -10,7 +10,7 @@ import static com.typetree.opencv.cookbook.OpencvUtil.showImage;
 import static org.bytedeco.opencv.global.opencv_imgcodecs.IMREAD_GRAYSCALE;
 import static org.bytedeco.opencv.global.opencv_imgcodecs.imread;
 
-public class Demo02Salt {
+public class Demo01Salt {
     public static void main(String[] args) {
         Mat image = imread("Cookbook/data/boldt.jpg", IMREAD_GRAYSCALE);
         salt(image, 10000);
