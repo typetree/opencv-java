@@ -8,7 +8,7 @@ import java.util.Random;
 
 import static com.typetree.opencv.cookbook.OpencvUtil.showImage;
 import static org.bytedeco.opencv.global.opencv_imgcodecs.IMREAD_GRAYSCALE;
-import static org.bytedeco.opencv.global.opencv_imgcodecs.imread;
+import static org.bytedeco.opencv.global.opencv_imgcodecs.imread;7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
 
 public class Demo01Salt {
     public static void main(String[] args) {
