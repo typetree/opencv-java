@@ -6,9 +6,7 @@ import org.bytedeco.javacpp.IntPointer;
 import org.bytedeco.javacpp.PointerPointer;
 import org.bytedeco.opencv.opencv_core.Mat;
 
-import static org.bytedeco.opencv.global.opencv_imgproc.calcBackProject;
-import static org.bytedeco.opencv.global.opencv_imgproc.threshold;
-import static org.opencv.imgproc.Imgproc.THRESH_BINARY;
+import static org.bytedeco.opencv.global.opencv_imgproc.*;
 
 @Data
 public class ContentFinder {

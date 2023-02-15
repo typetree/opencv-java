@@ -7,6 +7,7 @@ import org.bytedeco.opencv.opencv_core.Scalar;
 
 import javax.swing.*;
 import java.awt.image.BufferedImage;
+import java.nio.IntBuffer;
 
 import static org.bytedeco.javacv.Java2DFrameUtils.toBufferedImage;
 import static org.bytedeco.opencv.global.opencv_imgproc.rectangle;
@@ -30,5 +31,9 @@ public class OpencvUtil {
         Mat dest = image.clone();
         rectangle(dest, overlay, color);
         return dest;
+    }
+
+    public static IntBuffer wrapInIntBuffer(int v){
+        return IntBuffer.wrap(new int[]{v});
     }
 }
