@@ -13,7 +13,7 @@ import static org.bytedeco.opencv.global.opencv_imgproc.COLOR_BGR2HSV;
 import static org.bytedeco.opencv.global.opencv_imgproc.cvtColor;
 import static org.bytedeco.opencv.global.opencv_video.meanShift;
 
-public class Demo07MeanShiftDetector {
+public class Demo08MeanShiftDetector {
 
     public static Mat meanShiftImage(Mat imageRoi, Mat targetImage, Rect rect){
 

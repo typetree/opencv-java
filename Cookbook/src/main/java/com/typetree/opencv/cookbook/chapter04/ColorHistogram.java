@@ -24,7 +24,7 @@ public class ColorHistogram {
 
     private int numberOfBins = 256;
 
-    private Mat getHistogram(Mat image){
+    public Mat getHistogram(Mat image){
 
         if(image == null || image.channels()!=3){
             return null;

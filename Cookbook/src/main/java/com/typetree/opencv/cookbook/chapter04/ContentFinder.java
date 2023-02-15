@@ -6,6 +6,7 @@ import org.bytedeco.javacpp.IntPointer;
 import org.bytedeco.javacpp.PointerPointer;
 import org.bytedeco.opencv.opencv_core.Mat;
 
+import static org.bytedeco.opencv.global.opencv_core.normalize;
 import static org.bytedeco.opencv.global.opencv_imgproc.*;
 
 @Data
@@ -13,6 +14,11 @@ public class ContentFinder {
 
     private Mat _histogram = new Mat();
     private float _threshold = -1f;
+
+    public void set_histogram(Mat _histogram) {
+        //注意一定要归一化！！！
+        normalize(_histogram, this._histogram);
+    }
 
     public Mat find(Mat image){
         int[] channels = {0,1,2};
